@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - 'node'
+git:
+  depth: 3
+scripts:
+  - yarn test
+notifications:
+  slack: jesusprojects:lSNskQo9LS4erXsBudiejeEH
+  email:
+    recipients:
+      - jedave.co@gmail.com
+      - 15-10345@usb.ve
+deploy:
+  provider: heroku
+  skip-cleanup : true
+  keep-history: true
+  api_key: 85498aaa-15e6-4525-b30b-d5fa5ebc2422
+  app: platzi-store-backend-travisci
+  on:
+    repo: jesusdavc/platzi-store-backend
