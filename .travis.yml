@@ -20,6 +20,10 @@ deploy:
   skip-cleanup : true
   keep-history: true
   api_key: 85498aaa-15e6-4525-b30b-d5fa5ebc2422
+<<<<<<< HEAD
   app: platzi-store-backend-travisci
+=======
+  app: platzi-store-backend-tarvisci
+>>>>>>> 739a2ba855fbf4205af1fa44dc49cbc696baac4a
   on:
     repo: jesusdavc/platzi-store-backend
